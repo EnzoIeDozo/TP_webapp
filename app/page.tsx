@@ -6,20 +6,9 @@ import clsx from 'clsx';
 import { lusitana } from '@/app/ui/fonts';
 import Image from 'next/image';
 
-export default function InvoiceStatus({ status }: { status: string }) {
+export export default function Page() {
   return (
-    <>
-      <span
-        className={clsx(
-          'inline-flex items-center rounded-full px-2 py-1 text-sm',
-          {
-            'bg-gray-100 text-gray-500': status === 'pending',
-            'bg-green-500 text-white': status === 'paid',
-          },
-        )}
-      >
-        {status}
-      </span>
+
       <main className="flex min-h-screen flex-col p-6">
         <div className="flex h-20 shrink-0 items-end rounded-lg bg-blue-500 p-4 md:h-52">
           { <AcmeLogo />}
